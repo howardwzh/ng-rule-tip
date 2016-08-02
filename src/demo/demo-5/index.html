@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="demo">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>demo-5</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="../demo.css" rel="stylesheet">
+</head>
+
+<body ng-controller="demoCtrl">
+    <input type="text" ng-model="formData.userNameA" rule-tip="globalObj" rule-tip-preset="presetObj.nameA">
+    <br>
+    <input type="text" ng-model="formData.userNameB" rule-tip="globalObj" rule-tip-preset="presetObj.nameB">
+    <br>
+    <span class="hide-me" rule-tip-group-value="formData.userNameA+formData.userNameB" rule-tip="globalObj" rule-tip-preset="presetObj.groupName" rule-tip-limit-show="globalObj.resultObj.nameA||globalObj.resultObj.nameB">{{formData.userNameA}}{{formData.userNameB}}</span>
+    <p><span ng-if="globalObj.isError===undefined">No testing</span><span ng-if="globalObj.isError">Has error</span><span ng-if="globalObj.isError===false">No error</span></p>
+</body>
+<script src="../angular.js"></script>
+<script src="../../ng-rule-tip.js"></script>
+<script src="index.js"></script>
+
+</html>

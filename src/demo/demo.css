@@ -1,0 +1,22 @@
+input[type="text"], input[type="passward"] {
+	height: 30px;
+	line-height: 28px;
+	margin-bottom: 10px;
+	padding-left: 8px;
+	border: 1px solid #333;
+	border-radius: 3px;
+}
+input[type="text"].error-input, input[type="passward"].error-input {
+	margin: -1px 0 9px -1px;
+	border: 2px solid #ff4848;
+}
+.error-span {
+	color: #ff4848;
+}
+.error-msg {
+	padding-left: 10px;
+	color: #ff4848;
+}
+.hide-me {
+	display: none !important;
+}

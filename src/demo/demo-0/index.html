@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="demo">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>demo-0</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="../demo.css" rel="stylesheet">
+</head>
+
+<body ng-controller="demoCtrl">
+    <input type="text" class="test" ng-model="formData.userName" rule-tip="globalObj" rule-tip-preset="presetObj.name">
+    <p><span ng-if="globalObj.isError===undefined">No testing</span><span ng-if="globalObj.isError">Has error</span><span ng-if="globalObj.isError===false">No error</span></p>
+</body>
+<script src="../angular.js"></script>
+<script src="../../ng-rule-tip.js"></script>
+<script src="index.js"></script>
+
+</html>
