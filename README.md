@@ -1,7 +1,7 @@
 #ng-rule-tip v1.0.0
 An angular directive for verification
 
-[Docs / Demos](http://howardwzh.github.io/#/docs/ng-rule-tip)
+[Docs / Demos](http://howardwzh.github.io/#/docs/ngrt)
 
 ###Get Started
 
